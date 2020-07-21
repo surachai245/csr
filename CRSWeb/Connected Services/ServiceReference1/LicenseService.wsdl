@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://schemas.microsoft.com/ws/2005/02/mex/bindings" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LicenseService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://schemas.microsoft.com/ws/2005/02/mex/bindings" location="http://w2wasuho121:6969/LicenseService.svc?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://w2wasuho121:6969/LicenseService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://w2wasuho121:6969/LicenseService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://w2wasuho121:6969/LicenseService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfLicense" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ILicenseService_WCFLicense_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFLicense" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_WCFLicense_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_Test_InputMessage">
+    <wsdl:part name="parameters" element="tns:Test" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_Test_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetEmployeeLHBank_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeLHBank" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetEmployeeLHBank_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeLHBankResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetEmployeeQuitLHBank_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeQuitLHBank" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetEmployeeQuitLHBank_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeQuitLHBankResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetEmployeeLHFG_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeLHFG" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetEmployeeLHFG_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeLHFGResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetEmployeeQuitLHFG_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeQuitLHFG" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetEmployeeQuitLHFG_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeQuitLHFGResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetEmployeeByEmpCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeByEmpCode" />
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetEmployeeByEmpCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeByEmpCodeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ILicenseService">
+    <wsdl:operation name="WCFLicense">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/WCFLicense" message="tns:ILicenseService_WCFLicense_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/WCFLicenseResponse" message="tns:ILicenseService_WCFLicense_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Test">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/Test" message="tns:ILicenseService_Test_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/TestResponse" message="tns:ILicenseService_Test_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeLHBank">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/GetEmployeeLHBank" message="tns:ILicenseService_GetEmployeeLHBank_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/GetEmployeeLHBankResponse" message="tns:ILicenseService_GetEmployeeLHBank_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeQuitLHBank">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/GetEmployeeQuitLHBank" message="tns:ILicenseService_GetEmployeeQuitLHBank_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/GetEmployeeQuitLHBankResponse" message="tns:ILicenseService_GetEmployeeQuitLHBank_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeLHFG">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/GetEmployeeLHFG" message="tns:ILicenseService_GetEmployeeLHFG_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/GetEmployeeLHFGResponse" message="tns:ILicenseService_GetEmployeeLHFG_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeQuitLHFG">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/GetEmployeeQuitLHFG" message="tns:ILicenseService_GetEmployeeQuitLHFG_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/GetEmployeeQuitLHFGResponse" message="tns:ILicenseService_GetEmployeeQuitLHFG_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeByEmpCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILicenseService/GetEmployeeByEmpCode" message="tns:ILicenseService_GetEmployeeByEmpCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILicenseService/GetEmployeeByEmpCodeResponse" message="tns:ILicenseService_GetEmployeeByEmpCode_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="basic" type="tns:ILicenseService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="WCFLicense">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/WCFLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Test">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/Test" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeLHBank">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/GetEmployeeLHBank" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeQuitLHBank">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/GetEmployeeQuitLHBank" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeLHFG">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/GetEmployeeLHFG" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeQuitLHFG">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/GetEmployeeQuitLHFG" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeByEmpCode">
+      <soap:operation soapAction="http://tempuri.org/ILicenseService/GetEmployeeByEmpCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LicenseService">
+    <wsdl:port name="basic" binding="tns:basic">
+      <soap:address location="http://w2wasuho121:6969/LicenseService.svc/basic" />
+    </wsdl:port>
+    <wsdl:port name="mex" binding="i0:mex">
+      <soap12:address location="http://w2wasuho121:6969/LicenseService.svc/mex" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://w2wasuho121:6969/LicenseService.svc/mex</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

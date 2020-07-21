@@ -1,0 +1,100 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="EmployeeLayout.master.vb" Inherits="CRSWeb.EmployeeLayout" %>
+
+<!DOCTYPE html>
+<html lang="en" runat="server">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>CRS Project</title>
+    <%--<link rel="stylesheet" href="assets/css/cs-skin-elastic.css">--%>
+    <%--<link href="https://fonts.googleapis.com/css?family=Piedra" rel="stylesheet" type="text/css">--%>
+    <link href="<%= ResolveUrl("~/assets/css/bootstrap.min.css") %>" rel="stylesheet" />
+    <link href="<%= ResolveUrl("~/assets/css/font-awesome.min.css") %>" rel="stylesheet" />
+    <link href="<%= ResolveUrl("~/assets/css/style.css") %>" rel="stylesheet" />
+    <%--  <link href="<%= ResolveUrl("~/assets/css/fullcalendar.min.css") %>" rel="stylesheet" />--%>
+    <link href="<%= ResolveUrl("~/assets/css/jquery-ui.css") %>" rel="stylesheet" />
+    <link href="<%= ResolveUrl("~/assets/css/gijgo.min.css") %>" rel="stylesheet" />
+    <link href="<%= ResolveUrl("~/assets/css/jquery.fontselect.css") %>" rel="stylesheet" />
+    <%-- <link href="<%= ResolveUrl("~/assets/css/bootstrap-colorpicker.min.css") %>" rel="stylesheet" />--%>
+    <script src="<%= ResolveUrl("~/assets/js/jquery-3.4.1.min.js") %>"></script>
+    <script src="<%= ResolveUrl("~/assets/js/popper.min.js") %>"></script>
+    <script src="<%= ResolveUrl("~/assets/js/bootstrap.min.js") %>"></script>
+    <script src="<%= ResolveUrl("~/assets/js/jquery.matchHeight.min.js") %>"></script>
+    <script src="<%= ResolveUrl("~/assets/js/main.js") %>"></script>
+    <script src="<%= ResolveUrl("~/Scripts/jquery-ui.js") %>"></script>
+    <%-- <script src="<%= ResolveUrl("~/assets/js/gijgo.min.js") %>"></script>--%>
+    <script src="<%= ResolveUrl("~/assets/js/jquery.fontselect.js") %>"></script>
+    <%--<script src="<%= ResolveUrl("~/assets/js/bootstrap-colorpicker.js") %>"></script>--%>
+    <script src="<%= ResolveUrl("~/assets/js/sweet-alert.js") %>"></script>
+    <link href="<%= ResolveUrl("~/assets/css/custom.css") %>" rel="stylesheet" />
+    <style>
+        #weatherWidget .currentDesc {
+            color: #ffffff !important;
+        }
+
+        .traffic-chart {
+            min-height: 335px;
+        }
+
+        #flotPie1 {
+            height: 150px;
+        }
+
+            #flotPie1 td {
+                padding: 3px;
+            }
+
+            #flotPie1 table {
+                top: 20px !important;
+                right: -10px !important;
+            }
+
+        .chart-container {
+            display: table;
+            min-width: 270px;
+            text-align: left;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        #flotLine5 {
+            height: 105px;
+        }
+
+        #flotBarChart {
+            height: 150px;
+        }
+
+        #cellPaiChart {
+            height: 160px;
+        }
+    </style>
+
+</head>
+<body class="bg-light">
+    <div class="sufee-login d-flex align-content-center flex-wrap">
+        <div class="container">
+            <div>
+                <%-- <div class="login-logo">
+                    <a href="index.html">
+                        <img class="align-content" src="../images/logo.png" alt="">
+                    </a>
+                </div>--%>
+                <div class="content">
+                    <div class="animated fadeIn">
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder> 
+                    </div>
+                    <%--<asp:ScriptManager runat="server">
+                                <Scripts>
+                                </Scripts>
+                            </asp:ScriptManager>--%>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

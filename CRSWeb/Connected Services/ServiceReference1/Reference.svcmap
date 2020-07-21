@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0719e2db-2692-4275-af44-a2f40dcafdce" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://w2wasuho121:6969/LicenseService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LicenseService.wsdl" MetadataType="Wsdl" ID="2a7c354d-6014-4dab-8dd8-36166cd517f6" SourceId="1" SourceUrl="http://w2wasuho121:6969/LicenseService.svc?wsdl" />
+    <MetadataFile FileName="LicenseService1.wsdl" MetadataType="Wsdl" ID="9b877709-2f76-4079-baec-d1eab407d697" SourceId="1" SourceUrl="http://w2wasuho121:6969/LicenseService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="LicenseService.disco" MetadataType="Disco" ID="cf6f4e51-f69c-43b9-83dd-07d5fb671f4a" SourceId="1" SourceUrl="http://w2wasuho121:6969/LicenseService.svc?disco" />
+    <MetadataFile FileName="LicenseService.xsd" MetadataType="Schema" ID="52326650-31f7-4f1c-889e-28d2216183d7" SourceId="1" SourceUrl="http://w2wasuho121:6969/LicenseService.svc?xsd=xsd2" />
+    <MetadataFile FileName="LicenseService1.xsd" MetadataType="Schema" ID="aa7a86fb-82df-487e-9a27-9da4699a539a" SourceId="1" SourceUrl="http://w2wasuho121:6969/LicenseService.svc?xsd=xsd0" />
+    <MetadataFile FileName="LicenseService2.xsd" MetadataType="Schema" ID="4e6dfc2d-65f7-4d20-8f6b-49928fa8fade" SourceId="1" SourceUrl="http://w2wasuho121:6969/LicenseService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

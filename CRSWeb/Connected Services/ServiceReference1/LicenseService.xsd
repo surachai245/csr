@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfLicense" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfLicense" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfLicense">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="License" nillable="true" type="tns:License" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLicense" nillable="true" type="tns:ArrayOfLicense" />
+  <xs:complexType name="License">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LicenseExpire" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LicenseIssue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LicenseNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LicenseTypeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LicenseTypeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Other1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Other2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Other3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RenewNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SurName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TitleName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="License" nillable="true" type="tns:License" />
+  <xs:complexType name="ArrayOfEmployee">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Employee" nillable="true" type="tns:Employee" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmployee" nillable="true" type="tns:ArrayOfEmployee" />
+  <xs:complexType name="Employee">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CC_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DEPARTMENT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DIVISION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EM_AGE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EM_BIRTHDATE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EM_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EM_COMPANY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EM_ENAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EM_ESURNAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EM_FULLNAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EM_IDCARD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EM_MAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EM_MOBILE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EM_NICKNAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EM_PICTURE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EM_RUNNO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EM_SEX" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EM_TNAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EM_TSURNAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EM_TYPEPICTURE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EO_EFDATE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EO_EFDATE_MONTH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EO_EFDATE_YEAR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GROUP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OP_ENAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OP_TNAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PHONE_OFFICE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLS_TNAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PO_TNAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SECTER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SECTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UNIT" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Employee" nillable="true" type="tns:Employee" />
+</xs:schema>

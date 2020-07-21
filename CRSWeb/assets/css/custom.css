@@ -1,0 +1,136 @@
+﻿.custom-th{
+    text-align: center;
+}
+
+.table td, .table .table-footer td table td {
+    padding: 6px;
+}
+
+.table .table-footer td {
+    padding: 0;
+}
+.search-trigger{
+    cursor: default;
+}
+.font-select{
+    width: 100%;
+}
+/*.navbar .navbar-nav{  /*> li.active 
+    background: #fafafa;
+}*/
+
+/* Start : Add Font */
+@font-face {
+    font-family: 'LHBankBodyItalic';
+    font-style: normal;
+    font-weight: 400;
+    src: local('LHBankBodyItalic'), url('/assets/fonts/LHBankBodyItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'LHBankHandwriting';
+    font-style: normal;
+    font-weight: 400;
+    src: local('LHBankHandwriting'), url('/assets/fonts/LHBankHandwriting.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'LHBankHeader';
+    font-style: normal;
+    font-weight: 400;
+    src: local('LHBankHeader'), url('/assets/fonts/LHBankHeader.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'LHBankHeaderBold';
+    font-style: normal;
+    font-weight: 400;
+    src: local('LHBankHeaderBold'), url('/assets/fonts/LHBankHeaderBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'LHBankHeaderBoldItalic';
+    font-style: normal;
+    font-weight: 400;
+    src: local('LHBankHeaderBoldItalic'), url('/assets/fonts/LHBankHeaderBoldItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'LHBankHeaderItalic';
+    font-style: normal;
+    font-weight: 400;
+    src: local('LHBankHeaderItalic'), url('/assets/fonts/LHBankHeaderItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'LHBankHeaderThin';
+    font-style: normal;
+    font-weight: 400;
+    src: local('LHBankHeaderThin'), url('/assets/fonts/LHBankHeaderThin.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'LHBankHeaderThinItalic';
+    font-style: normal;
+    font-weight: 400;
+    src: local('LHBankHeaderThinItalic'), url('/assets/fonts/LHBankHeaderThinItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Bauer';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Bauer'), url('/assets/fonts/Bauer.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Action Man';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Action Man'), url('/assets/fonts/Action Man.woff') format('woff');
+} 
+/* End : Add Font */
+
+.font-headersize {
+    font-size: 30px;
+}
+.font-headersize2 {
+    font-size: 30px;
+}
+
+.font-buttonsize {
+    font-size: 20px !important;
+    font-family: LHBankHeaderThin !important;
+    width: 250px !important;
+    height: 40px !important;
+    padding: 0px !important;
+    border: 0px !important;
+}
+.font-buttonsize2 {
+    font-size: 18px;
+    /*font-family: LHBankHeaderThin;*/
+    font-family: LHBankHeaderBold;
+}
+.font-detailsize {
+    font-size: 16px;
+    font-family: LHBankHeaderBold;
+    /*font-family: LHBankHeaderThin;
+    font-weight: bold;*/
+    /*color: white;*/
+}
+.font-detailsize2 {
+    font-size: 22px;
+    font-family: LHBankHeaderBold;
+    /*font-family: LHBankHeaderThin;
+    font-weight: bold;*/
+    /*color: white;*/
+}
+
+.avatar-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+p {
+    color: unset;
+    font-family: unset;
+}
